@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <input type="number" id="value1" placeholder="1st Value">
+    <input type="number" id="value2" placeholder="2nd Value">
+    <input type="number" id="value3" placeholder="3rd Value">
+    <input type="number" id="value4" placeholder="4th Value">
+
+    <br><br>
+
+    <button onclick="output_res('+')">+</button>
+    <button onclick="output_res('-')">-</button>
+    <button onclick="output_res('/')">/</button>
+    <button onclick="output_res('*')">*</button>
+
+    <br><br>
+    <input type="number" id="res" placeholder="Result">
+    
+    <script>
+        function output_res(op)
+        {
+            let f_value = parseFloat(document.getElementById('value1').value) || 0;
+            let s_value = parseFloat(document.getElementById('value2').value) || 0;
+            let h_value = parseFloat(document.getElementById('value3').value) || 0;
+            let q_value = parseFloat(document.getElementById('value4').value) || 0;
+
+            let result = 0;
+
+            if (op == '+')
+            {
+                result = f_value + s_value + h_value + q_value;
+            }
+            else if (op == '-')
+            {
+                result = f_value - s_value - h_value - q_value;
+            }
+            else if (op == '/')
+            {
+                // Zero division check ta ke error na aaye
+                if (s_value !== 0 && h_value !== 0 && q_value !== 0) {
+                    result = f_value / s_value / h_value / q_value;
+                } else {
+                    result = "Error (Div by 0)";
+                }
+            }
+            else if (op == '*')
+            {
+                result = f_value * s_value * h_value * q_value;
+            }
+            else
+            {
+                alert("invalid click");
+            }
+
+            document.getElementById('res').value = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #111; /* Gym ke liye dark theme */
+    color: #fff;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #ff4a57; /* Orange-Red accent color */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff4a57;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ff4a57;
+}
+
+.btn {
+    background-color: #ff4a57;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1000') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #ff4a57;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-large {
+    background-color: #ff4a57;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Plans Section */
+.plans {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.plans h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.plan-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    border: 1px solid #333;
+}
+
+.card.active {
+    border: 2px solid #ff4a57;
+}
+
+.price {
+    font-size: 28px;
+    color: #ff4a57;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.card ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.card ul li {
+    margin: 10px 0;
+    color: #ccc;
+}
+/* Features Section */
+.features {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #1a1a1a; /* Dark gray background */
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    transition: 0.3s ease;
+}
+
+.feature-box:hover {
+    border-color: #ff4a57; /* Hover karne par red border aayega */
+    transform: translateY(-5px); /* Chota sa lift effect */
+}
+
+.feature-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    color: #ff4a57;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.feature-box p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* Trainers Section */
+.trainers {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #111; /* Dark Background */
+}
+
+.trainers h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.trainer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.trainer-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden; /* Taake image ke corners bhi round rahein */
+    width: 280px;
+    border: 1px solid #333;
+    padding-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.trainer-card:hover {
+    transform: scale(1.03); /* Hover karne par halka sa bada hoga */
+    border-color: #ff4a57;
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.trainer-card h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.trainer-card p {
+    color: #ff4a57;
+    font-size: 14px;
+    margin-top: 5px;
+}
+/* Contact Section */
+.contact {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #1a1a1a; /* Dark Gray Background */
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto; /* Form ko center mein lane ke liye */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input {
+    padding: 15px;
+    background-color: #111;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form input:focus {
+    border-color: #ff4a57; /* Click karne par red border aayega */
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation Practice</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        .offer-btn{
+            margin-top: 50px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            background-color: purple;
+            cursor: pointer;
+
+            animation: offer 4s infinite;
+        }
+
+        @keyframes offer{
+
+            0%{
+                background: purple;
+                transform: scale(1);
+            }
+
+            25%{
+                background: navajowhite;
+                transform: scale(1.2);
+            }
+
+            50%{
+                background: yellow;
+                transform: rotate(10deg);
+            }
+
+            75%{
+                background: gray;
+                transform: scale(0.9);
+            }
+
+            100%{
+                background: red;
+                transform: scale(1);
+            }
+        }
+
+        .chat{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            border: 2px solid green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<button class="offer-btn">Special Offer</button>
+
+<div class="chat">
+    <img src="images/chat.png" width="100%" height="100%">
+</div>
+
+</body>
+</html>
