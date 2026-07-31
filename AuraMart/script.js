@@ -1,8 +1,19 @@
 const products = [
     { id: 1, name: "Wireless Headphones", price: 59.99, image: "assets/headphone.jpg" },
     { id: 2, name: "Smart Watch", price: 99.99, image: "assets/watch.jpg" },
-    { id: 3, name: "Running Shoes", price: 79.99, image: "assets/shoes.jpg" },
-    { id: 4, name: "Minimalist Backpack", price: 45.00, image: "assets/laptop.jpg" }
+    { id: 3, name: " Shoes", price: 79.99, image: "assets/shoes.jpg" },
+    { id: 4, name: "Mouse", price: 9.00, image: "assets/Mouse.jpg" },
+    { id: 5, name: "Keyboard", price: 28.00, image: "assets/Keyboard.jpg" },
+    { id: 6, name: "CPU", price: 150.00, image: "assets/CPu.jpg" },
+    { id: 7, name: "RAM", price: 20.00, image: "assets/RAM.jpg" },
+    { id: 8, name: "HardDisk", price: 40.00, image: "assets/HardDisk.jpg" },
+    { id: 9, name: "Fans", price: 10.00, image: "assets/Fans.jpg" },
+    { id: 10, name: "DataCables", price: 30.00, image: "assets/DataCables.jpg" },
+    { id: 11, name: "Phones", price: 100.00, image: "assets/Phones.jpg" },
+    { id: 12, name: "Camera", price: 50.00, image: "assets/Camera.jpg" },
+    { id: 13, name: "LED", price: 80.00, image: "assets/LED.jpg" },
+    { id: 14, name: "Controller", price: 25.00, image: "assets/Controller.jpg" },
+    { id: 15, name: "Bags", price: 5.00, image: "assets/Bags.jpg" },
 ];
 
 const productGrid = document.getElementById("product-grid");
