@@ -20,8 +20,7 @@ import "./App.css";
         <p>Bootstrap Grid System & Components Example</p>
       </div>
       <div className="header">
-        <h1>Welcome to My React Store</h1>
-        <p>Bootstrap Grid System & Components Example</p>
+       
       </div>
 
       <h2 className="title">Our Services</h2>

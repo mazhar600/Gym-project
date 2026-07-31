@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(to right, navy, skyblue);
+}
+
+.form-box{
+    background: white;
+}
+
+h2{
+    color: darkblue;
+}
+
+label{
+    color: black;
+}
+
+.form-control,
+.form-select{
+    background: white;
+    color: black;
+    border: 2px solid blue;
+}
+
+.form-control:focus,
+.form-select:focus{
+    background: lightgreen;
+    color: black;
+    border-color: green;
+}
+
+.btn-warning{
+    background: orange;
+    color: white;
+    border: none;
+}
+
+.btn-warning:hover{
+    background: green;
+    color: white;
+}

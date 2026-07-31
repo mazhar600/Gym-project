@@ -3,106 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron Flex Gym</title>
+    <title>PowerFit Gym - Transform Your Body</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Navbar Section -->
+    <!-- Header & Navbar -->
     <header>
-        <div class="logo">IRON <span>FLEX</span></div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Plans</a>
-            <a href="#">Contact</a>
+        <nav class="navbar">
+            <div class="logo">Power<span>Fit</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
-        <button class="btn">Join Now</button>
     </header>
 
-    <!-- Hero / Main Banner Section -->
-    <section class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1>NO PAIN, NO GAIN</h1>
-            <p>Apni body ko transform karein top trainers aur modern equipment ke sath.</p>
-            <a href="#" class="btn-large">Start Your Journey</a>
+            <h1>BUILD YOUR <span>BODY</span> WITH US</h1>
+            <p>Push your limits, achieve your goals, and transform your life with world-class equipment and expert training.</p>
+            <a href="#plans" class="btn">Join Us Today</a>
         </div>
     </section>
-<!-- Features / Services Section -->
-    <section class="features">
-        <h2>Why Choose Us?</h2>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title">Why Choose Us?</h2>
         <div class="feature-grid">
-            <div class="feature-box">
-                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=300" alt="Cardio">
+            <div class="feature-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Modern Equipment</h3>
+                <p>State-of-the-art machines and free weights to maximize your muscle growth.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-heartbeat"></i>
                 <h3>Cardio Training</h3>
-                <p>Apna stamina barhain hamari modern treadmill aur cycling machines ke sath.</p>
+                <p>Advanced cardio zone to improve endurance and burn fat effectively.</p>
             </div>
-            <div class="feature-box">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=300" alt="Weights">
-                <h3>Weight Lifting</h3>
-                <p>Heavy weights aur professional racks jo aap ki strength barhane mein madad karein.</p>
-            </div>
-            <div class="feature-box">
-                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=300" alt="Yoga">
-                <h3>Yoga & Flex</h3>
-                <p>Mental peace aur body flexibility ke liye special yoga classes.</p>
+            <div class="feature-card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Expert Trainers</h3>
+                <p>Professional guidance tailored specifically to your personal fitness goals.</p>
             </div>
         </div>
     </section>
+
     <!-- Trainers Section -->
-    <section class="trainers">
-        <h2>Meet Our Expert Trainers</h2>
+    <section id="trainers" class="trainers">
+        <h2 class="section-title">Meet Our Trainers</h2>
         <div class="trainer-grid">
             <div class="trainer-card">
-                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=300" alt="Trainer 1">
-                <h3>Zane Malik</h3>
-                <p>Strength & Conditioning Specialist</p>
+                <div class="trainer-img trainer-1"></div>
+                <h3>Alex Morgan</h3>
+                <p>CrossFit & Strength Coach</p>
             </div>
             <div class="trainer-card">
-                <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=300" alt="Trainer 2">
-                <h3>Sarah Khan</h3>
-                <p>Cardio & Weight Loss Expert</p>
+                <div class="trainer-img trainer-2"></div>
+                <h3>Jessica Smith</h3>
+                <p>Yoga & Pilates Expert</p>
             </div>
             <div class="trainer-card">
-                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=300" alt="Trainer 3">
-                <h3>Alex Mercer</h3>
-                <p>CrossFit & Yoga Instructor</p>
+                <div class="trainer-img trainer-3"></div>
+                <h3>David Miller</h3>
+                <p>Bodybuilding Specialist</p>
             </div>
         </div>
     </section>
-    <!-- Plans Section -->
-    <section class="plans">
-        <h2>Our Membership Plans</h2>
-        <div class="plan-cards">
-            <div class="card">
-                <h3>Basic</h3>
-                <p class="price">$20/mo</p>
+
+    <!-- Membership Plans -->
+    <section id="plans" class="plans">
+        <h2 class="section-title">Membership Plans</h2>
+        <div class="plans-grid">
+            <div class="plan-card">
+                <h3>Basic Plan</h3>
+                <h2>$29<span>/month</span></h2>
                 <ul>
-                    <li>Gym Access</li>
-                    <li>Free Locker</li>
+                    <li>Access to Gym Floor</li>
+                    <li>Standard Equipment</li>
+                    <li>1 Locker Access</li>
                 </ul>
+                <a href="#contact" class="btn-outline">Choose Plan</a>
             </div>
-            <div class="card active">
-                <h3>Premium</h3>
-                <p class="price">$45/mo</p>
+            <div class="plan-card popular">
+                <span class="badge">Popular</span>
+                <h3>Pro Plan</h3>
+                <h2>$59<span>/month</span></h2>
                 <ul>
-                    <li>24/7 Access</li>
-                    <li>Personal Trainer</li>
-                    <li>Diet Plan</li>
+                    <li>Full Gym Access</li>
+                    <li>All Equipment & Cardio</li>
+                    <li>Personal Trainer (2x/week)</li>
+                    <li>Diet Plan Included</li>
                 </ul>
+                <a href="#contact" class="btn">Choose Plan</a>
+            </div>
+            <div class="plan-card">
+                <h3>Elite Plan</h3>
+                <h2>$99<span>/month</span></h2>
+                <ul>
+                    <li>VIP All-Access Pass</li>
+                    <li>Unlimited Personal Training</li>
+                    <li>Custom Diet & Sauna Access</li>
+                    <li>Free Protein Shakes</li>
+                </ul>
+                <a href="#contact" class="btn-outline">Choose Plan</a>
             </div>
         </div>
     </section>
-<!-- Contact Section -->
-    <section class="contact">
-        <h2>Get In Touch</h2>
-        <p>Aaj hi register karein aur 10% discount payein!</p>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <button type="submit" class="btn-large">Submit Details</button>
-        </form>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Gym Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item g-1"></div>
+            <div class="gallery-item g-2"></div>
+            <div class="gallery-item g-3"></div>
+        </div>
     </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            
+                <form class="contact-form" action="http://localhost:3000/"submit-form" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 PowerFit Gym. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Simple JS for Mobile Menu Toggle -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
